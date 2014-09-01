@@ -1,0 +1,102 @@
+[
+    {
+        "name": "aura/autoload",
+        "version": "dev-develop-2",
+        "version_normalized": "dev-develop-2",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/auraphp/Aura.Autoload.git",
+            "reference": "63d1abc8622eb5354cc8b81bd562a681378a012a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/auraphp/Aura.Autoload/zipball/63d1abc8622eb5354cc8b81bd562a681378a012a",
+            "reference": "63d1abc8622eb5354cc8b81bd562a681378a012a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-08-28 20:47:35",
+        "type": "library",
+        "extra": {
+            "aura": {
+                "type": "library"
+            },
+            "branch-alias": {
+                "dev-develop-2": "2.0.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Aura\\Autoload\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Aura.Autoload Contributors",
+                "homepage": "https://github.com/auraphp/Aura.Autoload/contributors"
+            }
+        ],
+        "description": "Provides a PSR-4 compliant autoloader implementation.",
+        "homepage": "https://github.com/auraphp/Aura.Autoload/releases",
+        "keywords": [
+            "PSR-4",
+            "SPL autoloader",
+            "autoload",
+            "autoloader",
+            "class loader"
+        ]
+    },
+    {
+        "name": "smarty/smarty",
+        "version": "v3.1.19",
+        "version_normalized": "3.1.19.0",
+        "source": {
+            "type": "svn",
+            "url": "http://smarty-php.googlecode.com/svn",
+            "reference": "/tags/v3.1.19/@4867"
+        },
+        "require": {
+            "php": ">=5.2"
+        },
+        "time": "2014-08-07 20:42:11",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "distribution/libs/Smarty.class.php",
+                "distribution/libs/SmartyBC.class.php",
+                "distribution/libs/sysplugins/smarty_security.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Monte Ohrt",
+                "email": "monte@ohrt.com"
+            },
+            {
+                "name": "Uwe Tews",
+                "email": "uwe.tews@googlemail.com"
+            },
+            {
+                "name": "Rodney Rehm",
+                "email": "rodney.rehm@medialize.de"
+            }
+        ],
+        "description": "Smarty - the compiling PHP template engine",
+        "homepage": "http://www.smarty.net",
+        "keywords": [
+            "templating"
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+{
+	"name": "NodaSoft/ABCPApiSiteExample",
+	"description": "Пример сайта на публичном API платформы ABCP",
+	"minimum-stability": "dev",
+	"license": "BSD",
+	"authors": [
+		{
+			"name": "Ruslan Levitskiy",
+			"email": "rusart@nodasoft.com"
+		}
+	],
+	"require": {
+		"aura/autoload": "2.0.x-dev",
+		"smarty/smarty": "v3.1.19"
+	}
+}
