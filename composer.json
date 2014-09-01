@@ -10,7 +10,6 @@
 		}
 	],
 	"require": {
-		"aura/autoload": "2.0.x-dev",
 		"smarty/smarty": "v3.1.19"
 	}
 }
