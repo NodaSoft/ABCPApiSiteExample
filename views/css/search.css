@@ -1,0 +1,13 @@
+.jumbotron {
+    margin-top: 30px;
+}
+.firstStepRow{
+    cursor: pointer;
+}
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+#number{
+    width: 500px;
+}

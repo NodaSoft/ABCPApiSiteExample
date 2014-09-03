@@ -29,6 +29,8 @@ class PublicApiClient extends RestJsonClient
     public function searchBrands($number = NULL, $useOnlineStocks = NULL)
     {
         $requestVars = array(
+            'userlogin' => PublicApiConfig::USER_LOGIN,
+            'userpsw' => PublicApiConfig::USER_PSW,
             'number' => $number,
             'useOnlineStocks' => $useOnlineStocks,
         );
@@ -49,6 +51,8 @@ class PublicApiClient extends RestJsonClient
     public function searchArticles($number = NULL, $brand = NULL, $useOnlineStocks = NULL)
     {
         $requestVars = array(
+            'userlogin' => PublicApiConfig::USER_LOGIN,
+            'userpsw' => PublicApiConfig::USER_PSW,
             'number' => $number,
             'brand' => $brand,
             'useOnlineStocks' => $useOnlineStocks,
@@ -68,6 +72,8 @@ class PublicApiClient extends RestJsonClient
     public function searchTips($number = NULL)
     {
         $requestVars = array(
+            'userlogin' => PublicApiConfig::USER_LOGIN,
+            'userpsw' => PublicApiConfig::USER_PSW,
             'number' => $number
         );
         $result = $this->getResultsByGet($requestVars, '/search/tips');
