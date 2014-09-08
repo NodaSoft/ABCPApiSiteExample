@@ -10,7 +10,7 @@
                            class="form-control">
 
                     <div class="input-group-btn">
-                        <button id="submitSearchButton" class="btn btn-primary" type="button"
+                        <button id="submitSearchButton" class="btn btn-primary" type="submit"
                                 data-loading-text="Ищем...">
                             Найти
                         </button>
