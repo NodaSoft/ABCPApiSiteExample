@@ -12,6 +12,8 @@ function abcpApiSiteExampleAutoload($class = NULL)
         $classFiles = array(
             'search' => 'controllers/search.php',
             'helper' => 'controllers/helper.php',
+            'ajaxrouter' => 'controllers/ajax/ajax.router.php',
+            'ajax\base' => 'controllers/ajax/ajax.base.php',
 
             'smarty' => 'vendor/smarty/smarty/distribution/libs/Smarty.class.php',
 

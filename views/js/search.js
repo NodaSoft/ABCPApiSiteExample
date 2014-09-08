@@ -31,5 +31,32 @@ $(document).ready(function () {
             $('#submitSearchButton').button('loading');
         }
         $(this).parent().removeClass("has-error");
-    })
+    });
+
+    var searchTips = new Bloodhound({
+        datumTokenizer: function (d) {
+            return Bloodhound.tokenizers.whitespace(d.number);
+        },
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        limit: 10,
+        minLength: 3,
+        remote: {
+            url: '/ajax.php?action=getSearchTips&params[number]=%QUERY',
+            filter: function (data) {
+                return data.result;
+            }
+        }
+    });
+
+    searchTips.initialize();
+
+    $('#number').typeahead(null, {
+        displayKey: 'number',
+        minLength: 3,
+        highlight: true,
+        source: searchTips.ttAdapter(),
+        templates: {
+            suggestion: Handlebars.compile('<a href="/?number={{number}}&brand={{brand}}"><p><strong>{{brand}}</strong> – {{number}}</p></a>')
+        }
+    });
 });
