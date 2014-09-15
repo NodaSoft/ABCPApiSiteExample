@@ -58,5 +58,14 @@ $(document).ready(function () {
         templates: {
             suggestion: Handlebars.compile('<a href="/?number={{number}}&brand={{brand}}"><p><strong>{{brand}}</strong> – {{number}}</p></a>')
         }
+    }).on('typeahead:selected', function(event, selection) {
+        var item = $(this);
+        var brandInput = $('<input/>', {
+            type: 'hidden',
+            name: 'brand',
+            value: selection.brand
+        });
+        item.before(brandInput);
+        item.closest("form").submit();
     });
 });
